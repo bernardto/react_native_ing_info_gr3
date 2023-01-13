@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3755d1f-5c41-4d5b-8ac2-baffebb17df3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/projet_react_final.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actions/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/actions/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/native/Navigation/NavigationDrawer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/native/Navigation/NavigationTabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/native/component/MoviesCard.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/native/component/MoviesCard.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/native/component/pagination.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/native/component/pagination.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/native/ecran/DetailsFilm.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/native/ecran/DetailsFilm.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/native/ecran/Favoris.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/native/ecran/Favoris.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/native/ecran/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/native/ecran/HomeScreen.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reducers/movies.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reducers/movies.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/store/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/store.js" afterDir="false" />
-    </list>
+    <list default="true" id="a3755d1f-5c41-4d5b-8ac2-baffebb17df3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,7 +75,7 @@
       <workItem from="1673165252270" duration="8020000" />
       <workItem from="1673249009837" duration="2708000" />
       <workItem from="1673307863498" duration="17628000" />
-      <workItem from="1673375245929" duration="67671000" />
+      <workItem from="1673375245929" duration="68541000" />
     </task>
     <servers />
   </component>
