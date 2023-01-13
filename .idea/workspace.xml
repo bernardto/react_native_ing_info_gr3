@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a3755d1f-5c41-4d5b-8ac2-baffebb17df3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="2IGHDyKTU1UFOd72pOgUnCjQlVq" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../react-native-app-movies" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\PhpStorm 2020.3\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\mes_projets\Android project\projet_react_final\src\native\Navigation" />
+      <recent name="D:\ING 3\react_native\src\react" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\mes_projets\Android project\projet_react_final\src\native\component" />
+      <recent name="C:\mes_projets\Android project\projet_react_final\src\native\dialog" />
+      <recent name="C:\mes_projets\Android project\projet_react_final\src\native" />
+      <recent name="D:\ING 3\react_native\src\native\Navigation" />
+      <recent name="D:\ING 3\react_native\src\native" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a3755d1f-5c41-4d5b-8ac2-baffebb17df3" name="Default Changelist" comment="" />
+      <created>1669800883904</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1669800883904</updated>
+      <workItem from="1669800886796" duration="20235000" />
+      <workItem from="1669884511555" duration="8296000" />
+      <workItem from="1669962885026" duration="3571000" />
+      <workItem from="1669966623166" duration="4042000" />
+      <workItem from="1669972412034" duration="20000" />
+      <workItem from="1669972461240" duration="8645000" />
+      <workItem from="1670052141892" duration="3482000" />
+      <workItem from="1670527157866" duration="5696000" />
+      <workItem from="1670657590660" duration="758000" />
+      <workItem from="1670710639136" duration="185000" />
+      <workItem from="1672747244686" duration="14910000" />
+      <workItem from="1672939454841" duration="598000" />
+      <workItem from="1673165252270" duration="8020000" />
+      <workItem from="1673249009837" duration="2708000" />
+      <workItem from="1673307863498" duration="17628000" />
+      <workItem from="1673375245929" duration="63913000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/native/component/MoviesCard.js</url>
+          <line>102</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
