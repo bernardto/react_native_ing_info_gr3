@@ -12,6 +12,9 @@ import {Divider} from "@rneui/base";
 const {apiKey} = privateConfig;
 
 function HomeScreen({navigation, r}) {
+    /*
+    const store = useSelector((store) => store.movies); est une instruction utilisée pour accéder à une partie spécifique de l'état global de l'application dans un composant React.
+     */
     const store = useSelector((store) => store.movies);
     const [data, setData] = useState([]); //c'est ici que sont stockés les films trouvés dans la recherche
     const [search, setSearch] = useState("");//text de recherché
