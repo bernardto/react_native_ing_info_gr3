@@ -3,12 +3,13 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import { NavigationContainer } from "@react-navigation/native";
 
-//screens
+//les différentes vues
 import HomeScreen from "../ecran/HomeScreen";
 import Favoris from "../ecran/Favoris";
-
+//
 import { useSelector, useDispatch } from 'react-redux';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+
 import DetailsFilm from "../ecran/DetailsFilm";
 
 const HomeStackNavigator = createNativeStackNavigator();
@@ -43,7 +44,7 @@ function MyStack() {
 const Tab = createBottomTabNavigator();
 
 function MyTabs() {
-    const store = useSelector((store) => store.sections);
+    const store = useSelector((store) => store.movies);
     return (
         <Tab.Navigator
             initialRouteName="Home"
@@ -66,7 +67,7 @@ function MyTabs() {
                 name="Favoris"
                 component={Favoris}
                 options={{
-                    tabBarBadge: store.sections.length,
+                    tabBarBadge: store.movies.length,
                     tabBarLabel: 'Favoris',
                     tabBarIcon: ({ color, size }) => (
                         <MaterialCommunityIcons name="heart" color={color} size={30} />

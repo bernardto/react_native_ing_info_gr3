@@ -1,10 +1,11 @@
-# Template Blank with navigation
 
-Template starter with React Navigation
 
-# Preview
+Projet React Native groupe INFO INFO 3
 
-![../media/withnav.gif](../media/withnav.gif)
+#TOTO LAGBEU BERNARD
+#KONE ABOUBAKAR
+#ODEDIRAN FATIMA ARIKE ODERONKE
+
 
 # Installation
 
@@ -28,26 +29,5 @@ Template starter with React Navigation
    expo start
    ```
 
-## Rapi UI
 
-![../media/hero.png](../media/hero.png)
 
-These UI components are provided by [Rapi UI](https://rapi-ui.kikiding.space/).
-Check the [documentation](https://rapi-ui.kikiding.space/docs/) for usage and more components.
-
-# File Managements
-
-These are the folders and the functionality
-
-```jsx
-/src/assets -> for media such as images, etc
-/src/components -> for components
-/src/navigation -> for React Navigation
-/src/provider -> for React Context
-/src/screens -> for Screens
-```
-
-if you find these useful don't forget to give it a star ⭐ and share it to your friends ❤️
-
-Reach me on [twitter](https://twitter.com/kikiding/)
-"# react_native_ing_info_gr3" 

@@ -8,8 +8,14 @@ import NoData from "../component/NoData";
 
 
 function Favoris({navigation, route}) {
+    /*
     const dispatch = useDispatch();
-    const store = useSelector((store) => store.sections);
+     est une instruction utilisée pour accéder à la fonction dispatch de Redux dans un composant React.
+     La fonction dispatch est utilisée pour envoyer des actions à l'application,
+      ce qui peut entraîner une mise à jour de l'état global de l'application.
+     */
+    const dispatch = useDispatch();
+    const store = useSelector((store) => store.movies);
 
 
     useEffect(() => {
@@ -24,12 +30,12 @@ function Favoris({navigation, route}) {
     return (
         <View style={{flex: 1, width: "100%"}}>
 
-            { store.sections && store.sections.length > 0 ? <>
-                <Text style={styles.textTotal}>{store.sections?.length > 1 ? store.sections.length+" Films trouvés": store.sections.length+" Film trouvé" } </Text>
+            { store.movies && store.movies.length > 0 ? <>
+                <Text style={styles.textTotal}>{store.movies?.length > 1 ? store.movies.length+" Films trouvés": store.movies.length+" Film trouvé" } </Text>
 
                 <FlatList
                    style={{backgroundColor: "#fff"}}
-                   data={store.sections}
+                   data={store.movies}
                    renderItem={({item}) =>
                        <MovieCard1
                            onClickDetails={() => {

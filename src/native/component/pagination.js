@@ -29,6 +29,7 @@ const Pagination = ({total, onChange}) => {
 
             <View style={styles.itemStyle}>
                 <RNPickerSelect
+
                     itemKey="value"
                     placeholder={"Page"}
                     onValueChange={onChange}

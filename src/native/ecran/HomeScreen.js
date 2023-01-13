@@ -12,20 +12,26 @@ import {Divider} from "@rneui/base";
 const {apiKey} = privateConfig;
 
 function HomeScreen({navigation, r}) {
-    const [data, setData] = useState([]);
-    const [search, setSearch] = useState("");
-    const [total, setTotal] = useState(0);
-    const [totalPage, setTotalPage] = useState(0);
-
+    const store = useSelector((store) => store.movies);
+    const [data, setData] = useState([]); //c'est ici que sont stockés les films trouvés dans la recherche
+    const [search, setSearch] = useState("");//text de recherché
+    const [total, setTotal] = useState(0);//total des résultats
+    const [totalPage, setTotalPage] = useState(0);//nb_page
+    /*
+     const dispatch = useDispatch();
+      est une instruction utilisée pour accéder à la fonction dispatch de Redux dans un composant React.
+      La fonction dispatch est utilisée pour envoyer des actions à l'application,
+       ce qui peut entraîner une mise à jour de l'état global de l'application.
+      */
     const dispatch = useDispatch();
 
-    const store = useSelector((store) => store.sections);
+    //Alert pas de connexion internet
     const createThreeButtonAlert = () =>
         Alert.alert('', 'Echec de connexion\n Aucun film trouvé', [
             {text: 'OK'},
         ]);
 
-
+    //A la création de la vue
     useEffect(() => {
         //  console.log(store);
 
@@ -46,6 +52,7 @@ function HomeScreen({navigation, r}) {
         });
     }, [navigation]);
 
+    //Récupération des données
     const fetchData = async (text, page) => {
         const url = "https://api.themoviedb.org/3/search/movie?api_key=" + apiKey + "&query=" + encodeURIComponent(text) + "&language=fr&page=" + page
         try {
@@ -66,10 +73,13 @@ function HomeScreen({navigation, r}) {
 
 
     return (
+
         <View style={{flex: 10, backgroundColor: "#fff",}}>
             {
+                //le text de recherche n'est pas vide
                 search && search.length > 0 ? <>
                     {
+                        //Le nombre de film trouvé n'est pas vide
                         data && data.length > 0 ?
                             <>
                                 <View style={{flex: 2, margin: 10}}>
@@ -87,11 +97,13 @@ function HomeScreen({navigation, r}) {
                                     <FlatList
                                         data={data}
                                         renderItem={({item}) =>
+                                            // CARD de chaque film
                                             <MovieCard1
                                                 onClickDetails={() => {
                                                     navigation.navigate('Details', {data: item});
                                                 }}
                                                 data={item} onClick={(e) => {
+                                                //AJOUTE OU SUPPRIME LE FILM DES FAVORIS
                                                 if (!e)
                                                     dispatch(favoritesAdd(item));
                                                 else

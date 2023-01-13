@@ -1,6 +1,8 @@
+//Dans ce fichier  nous définissons des actions pour ajouter et retirer des films:
+
 function add(section, item) {
   return {
-    type: 'LIBRARY_ADD',
+    type: 'FILM_ADD',
     section,
     item,
   };
@@ -8,7 +10,7 @@ function add(section, item) {
 
 function remove(section, item) {
   return {
-    type: 'LIBRARY_REMOVE',
+    type: 'FILM_REMOVE',
     section,
     item,
   };

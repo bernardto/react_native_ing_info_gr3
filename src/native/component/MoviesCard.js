@@ -9,12 +9,16 @@ import {useSelector} from "react-redux";
 const MovieCard1 = ({data, onClick, onClickDetails}) => {
 
 
-    const store = useSelector((store) => store.sections);
+    const store = useSelector((store) => store.movies);
 
+    /**
+     * Permet de vérifier que le film est un favoris
+     * @returns {boolean}
+     */
     const isFavorie = () => {
 
 
-        if (store.sections?.find(e => e.id === data.id))
+        if (store.movies?.find(e => e.id === data.id))
             return true;
         else
             return false;

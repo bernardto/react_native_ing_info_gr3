@@ -1,5 +1,10 @@
 import React, {useEffect} from "react";
 import {ImageBackground, ScrollView, StyleSheet, Text, View} from "react-native";
+import {Icon} from "@rneui/themed";
+import {MyTheme} from "../constantes/theme";
+import {Card} from "react-native-paper";
+import {useDispatch, useSelector} from "react-redux";
+import {favoritesAdd, favoritesRemove} from "../../actions/movies";
 
 function DetailsFilm({navigation, route}) {
     useEffect(() => {
@@ -8,6 +13,20 @@ function DetailsFilm({navigation, route}) {
             headerTitle: data.title,
         });
     }, []);
+    /*
+    const dispatch = useDispatch();
+     est une instruction utilisée pour accéder à la fonction dispatch de Redux dans un composant React.
+     La fonction dispatch est utilisée pour envoyer des actions à l'application,
+      ce qui peut entraîner une mise à jour de l'état global de l'application.
+     */
+    const dispatch = useDispatch();
+    const store = useSelector((store) => store.movies);
+    const isFavorie = () => {
+        if (store.movies?.find(e => e.id === data.id))
+            return true;
+        else
+            return false;
+    }
 
     const {data} = route.params;
     const image = {uri: "https://image.tmdb.org/t/p/w500/" + data.poster_path};
@@ -25,6 +44,19 @@ function DetailsFilm({navigation, route}) {
                         <Text style={styles.subtitleStyle}>Année : {data.release_date.split("-")[0]}</Text>
                         <Text style={styles.subtitleStyle}>Titre Original : {data.original_title}</Text>
                         <Text style={styles.subtitleStyle}>Note : {data.vote_average + "/10"}</Text>
+                        <Icon
+                            onPress={() => {
+                                //AJOUTE OU SUPPRIME LE FILM DES FAVORIS
+                                if (!isFavorie())
+                                    dispatch(favoritesAdd(data));
+                                else
+                                    dispatch(favoritesRemove(data));
+                            }}
+                            name={isFavorie() ? "heart" : "heart-outline"}
+                            type='ionicon'
+                            size={34}
+                            color={MyTheme.colors.primary}
+                        />
                     </View>
 
                     <View style={styles.body}>
